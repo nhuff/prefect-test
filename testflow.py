@@ -1,4 +1,4 @@
-from prefect import flow
+from prefect import flow, task
 from pathlib import Path
 
 
