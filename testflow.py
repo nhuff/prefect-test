@@ -3,7 +3,7 @@ from pathlib import Path
 
 
 @task
-def touch_file()
+def touch_file():
     Path('/tmp/file.txt').touch()
 
 @flow
