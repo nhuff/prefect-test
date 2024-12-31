@@ -2,7 +2,10 @@ from prefect import flow
 from pathlib import Path
 
 
+@task
+def touch_file()
+    Path('/tmp/file.txt').touch()
+
 @flow
 def my_flow() -> str:
-    Path('/tmp/file.txt').touch()
     print("Hello, world!")
