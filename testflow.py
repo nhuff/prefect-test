@@ -6,7 +6,7 @@ from pathlib import Path
 def touch_file():
     Path('/tmp/file.txt').touch()
 
-@flow
+@flow(persist_result=True)
 def my_flow() -> str:
-    print("Hello, world!")
     touch_file()
+    return "Hello, world!"
