@@ -9,3 +9,4 @@ def touch_file():
 @flow
 def my_flow() -> str:
     print("Hello, world!")
+    touch_file()
